@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.organised.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.organised.ui.Timetable.TimetableFragment"
+        android:label="Timetable"
+        tools:layout="@layout/fragment_timetable" />
+
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="com.example.organised.ui.Event.SlideshowFragment"
+        android:label="Event"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/nav_subject"
+        android:name="com.example.organised.Subject"
+        android:label="subject_fragment"
+        tools:layout="@layout/subject_fragment" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.organised.Profile"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.organised.About"
+        android:label="about_fragment"
+        tools:layout="@layout/about_fragment" />
+
+</navigation>
