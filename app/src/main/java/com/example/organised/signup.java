@@ -27,7 +27,7 @@ public class signup extends AppCompatActivity {
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.pass);
-//        confirmpassword = findViewById(R.id.confirmpass);
+        confirmpassword = findViewById(R.id.repass);
 
 
 
@@ -44,11 +44,11 @@ public class signup extends AppCompatActivity {
             public void onClick(View v) {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
-//                String repass = confirmpassword.getText().toString();
-                if(user.equals("")||pass.equals(""))
+                String repass = confirmpassword.getText().toString();
+                if(user.equals("")||pass.equals("")||repass.equals(""))
                     Toast.makeText(signup.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
                 else{
-                    if(true){
+                    if(pass.equals(repass)){
                         Boolean checkuser = DB.checkusername(user);
                         if(!checkuser){
                             Boolean insert = DB.insertData(user, pass);
