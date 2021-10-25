@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Organised">
         <activity
+            android:name=".Alarm"
+            android:exported="true" />
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity

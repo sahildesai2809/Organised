@@ -21,7 +21,7 @@ public class splash_screen extends AppCompatActivity {
     }
 
     public void delay(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
         finish();
     }
